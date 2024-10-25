@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Soru</th>
+                <th>Cevap</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 20 satır örnek -->
+            <tr>
+                <td class="question-column">const value = 42;
+                    <br>
+                    Yukarıdaki value değişkeninin tipini nasıl öğrenirsin?</td>
+                <td>console.log(typeof value);</td>
+            </tr>
+            <tr>
+                <td class="question-column">const name = "Merhaba Dünya";
+                    <br>
+                    Yukarıdaki name değişkeninin uzunluğunu bulmak için hangi metodu kullanırsın? Kod ile göster.</td>
+                <td>console.log(name.length);</td>
+            </tr>
+            <tr>
+                <td class="question-column">const city = "istanbul";
+                    <br>
+                    Yukarıdaki city string’ini büyük harflere çevirmek için hangi metodu kullanırsın?</td>
+                <td>console.log(city.toUpperCase());</td>
+            </tr>
+            <tr>
+                <td class="question-column">const number = 42.5;
+                    <br>
+                    number değişkeninin tam sayı olup olmadığını kontrol eden bir fonksiyon yaz.</td>
+                <td>console.log(Number.isInteger(number));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const fruits = ["elma", "armut"];
+                    const vegetables = ["havuç", "lahana"];
+                    <br>
+                    fruits ve vegetables dizilerini birleştirip tek bir dizi haline getiren bir yöntem kullan.</td>
+                <td>console.log(fruits.concat(vegetables));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const userInput = " JavaScript öğreniyorum ";
+                    <br>
+                    userInput değişkeninin başındaki ve sonundaki boşlukları silmek için hangi metodu kullanırsın?</td>
+                <td>console.log(userInput.trim());</td>
+            </tr>
+            <tr>
+                <td class="question-column">const num = 123;
+                    <br>
+                    num değişkenini string tipine çeviren bir yöntem göster.</td>
+                <td>console.log(num.toString());</td>
+            </tr>
+            <tr>
+                <td class="question-column">const mixedArray = [42, "JavaScript", true, null];
+                    <br>
+                    mixedArray dizisindeki her elemanın tipini typeof kullanarak kontrol eden bir döngü yaz.</td>
+                <td>mixedArray.forEach(x => console.log(typeof(x)));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const decimalNumber = 5.6789;
+                    <br>
+                    decimalNumber değişkenini 2 ondalık basamağa yuvarlayan bir kod yaz.</td>
+                <td>console.log(decimalNumber.toFixed(2));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const sentence = "JavaScript çok eğlenceli!";
+                    <br>
+                    sentence değişkeni içinde "eğlenceli" kelimesini içerip içermediğini kontrol eden bir yöntem yaz.</td>
+                <td>console.log(sentence.includes("eğlenceli"));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const greeting = "Merhaba Dünya";
+                    <br>
+                    greeting değişkeninde "Dünya" kelimesini "Evren" olarak değiştiren bir yöntem yaz.</td>
+                <td>console.log(greeting.replace('Dünya','Evren'));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const floatNumber = 4.7;
+                    <br>
+                    Yukarıdaki floatNumber değişkenini en yakın tam sayıya yuvarlayan bir yöntem yaz.</td>
+                <td>console.log(Math.round(floatNumber));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const colors = ["kırmızı", "yeşil"];
+                    <br>
+                    colors dizisinin sonuna "mavi" rengini ekleyen bir yöntem yaz.</td>
+                <td>colors.push('mavi');
+                    <br>
+                    console.log(colors);</td>
+            </tr>
+            <tr>
+                <td class="question-column">const words = "Elma, Armut, Muz";
+                    <br>
+                    words string’ini virgüllerle ayrılmış bir dizi haline getir.</td>
+                <td>console.log(words.split(", "));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const animals = ["kedi", "köpek", "kuş"];
+                    <br>
+                    animals dizisinin sonundaki elemanı silen bir yöntem yaz.</td>
+                <td>animals.pop();
+                    <br>
+                    console.log(animals)</td>
+            </tr>
+            <tr>
+                <td class="question-column">const text = "JavaScript harika!";
+                    <br>
+                    text içinde "HARİKA" kelimesini, büyük/küçük harf farkını göz ardı ederek arayan bir yöntem yaz.</td>
+                <td>const regex = /harika/i;
+                    <br>
+                    const sonuc = regex.test(text);
+                    <br>
+                    console.log(sonuc);</td>
+            </tr>
+            <tr>
+                <td class="question-column">const numara = 4.9;
+                    <br>
+                    numara değişkenini aşağıya doğru en yakın tam sayıya yuvarlayan bir yöntem yaz.</td>
+                <td>const yuvarlanmis = Math.floor(numara);
+                    <br>
+                    console.log(yuvarlanmis);</td>
+            </tr>
+            <tr>
+                <td class="question-column">const tech = ["JavaScript", "Python", "Ruby"];
+                    <br>
+                    tech dizisinin içinde "Python" olup olmadığını kontrol eden bir yöntem yaz.</td>
+                <td>const varMi = tech.includes("Python");
+                    <br>
+                    console.log(varMi);</td>
+            </tr>
+            <tr>
+                <td class="question-column">const phrase = "JavaScript öğreniyorum!";
+                    <br>
+                    phrase string’inin son karakterini bulan bir yöntem yaz.</td>
+                <td>const sonKarakter = phrase[phrase.length - 1];
+                    <br>
+                    console.log(sonKarakter);</td>
+            </tr>
+            <tr>
+                <td class="question-column">const quote = "Hayatta en hakiki mürşit ilimdir.";
+                    <br>
+                    quote string’inin 7. karakterinden itibaren kalan kısmını alıp yazdıran bir yöntem yaz.</td>
+                <td>console.log(quote.slice(7));</td>
+            </tr>
+            <tr>
+                <td class="question-column">const zorSoru = "JavaScript seviyorum çünkü JavaScript çok güçlü.";
+                    <br>
+                    zorSoru içinde "JavaScript" kelimesinin kaç kez geçtiğini bulan bir yöntem yaz.</td>
+                <td>const kacKere = zorSoru.split("JavaScript").length -1;
+                    <br>
+                    console.log(kacKere);</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
